@@ -1,0 +1,7 @@
+﻿python-dotenv
+langchain
+langchain-openai
+langchain-mcp-adapters
+langgraph
+SQLAlchemy>=2.0,<3.0
+psycopg2-binary>=2.9,<3.0

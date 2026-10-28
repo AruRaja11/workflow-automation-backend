@@ -1,0 +1,10 @@
+# env file
+.env
+
+
+# langgraph api
+.langgraph_api/ 
+
+# pycache   
+/__pycache__/
+

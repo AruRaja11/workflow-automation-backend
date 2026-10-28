@@ -1,0 +1,17 @@
+Write a first-contact cold message on behalf of Arun Raja to the business below. The goal is to start a genuine conversation about a website, not to pressure the recipient.
+
+**Available business information:**
+- Name: {name}
+- Category: {category}
+- Address: {address}
+- Rating: {rating}
+
+Use only information provided here. Treat generic or fallback values such as "there", "business", blank fields, and "not available" as missing; never repeat them as facts. Personalize naturally with the business name and, if it fits smoothly, its category. Do not mention the address or rating unless genuinely relevant. Do not imply that you researched the business beyond these details.
+
+In a warm, professional, conversational voice:
+- Briefly introduce Arun and his website-development offer.
+- Say that Arun wasn't able to find a website for the business, making clear this is only his observation—not a claim that the business has no website.
+- Explain in plain language that a professional website could help the business present its services, build credibility, and make it easier for potential customers to get in touch. Frame these as possibilities, not guaranteed results.
+- Close with one simple, low-pressure invitation to discuss the idea.
+
+Write 3–5 short, natural sentences. Avoid generic hype, pushy sales language, unsupported claims, invented details, and promises or guarantees. Do not use a subject line, labels, placeholders, or explanations. Output only the message.

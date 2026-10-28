@@ -1,0 +1,588 @@
+2026-10-24 23:56:45 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-24 23:56:45 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-24 23:57:20 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | middleware.request_logging | Request started: POST /app/v1/outreach/generate
+2026-10-24 23:57:20 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | services.outreachservicelayer | Outreach workflow started
+2026-10-24 23:57:20 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.gm_scraper | Google Maps scraper started
+2026-10-24 23:57:44 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.gm_scraper | Google Maps scraper completed lead_count=3
+2026-10-24 23:57:44 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.aicoldmessage | Cold-message generation started
+2026-10-24 23:57:44 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.aicoldmessage | Cold-message generation processing lead_count=3
+2026-10-24 23:57:44 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.aicoldmessage | Cold-message skipped lead_index=1 reason=missing_phone
+2026-10-24 23:57:48 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.aicoldmessage | Cold-message generation completed generated_count=2 skipped_count=1
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.saveleads | Lead export started lead_count=3
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | nodes.saveleads | Lead export completed lead_count=3 output_path=outcome\leads_20261024_235750.xlsx
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | services.outreachservicelayer | Outreach workflow completed lead_count=3 duration_ms=29512.30
+2026-10-24 23:57:50 | INFO     | 40e5530c-2959-4635-b92d-40fa52c4e66f | middleware.request_logging | Request completed: POST /app/v1/outreach/generate status=200 duration_ms=29518.69
+2026-10-25 17:14:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:14:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:15:33 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | middleware.request_logging | Request started: POST /app/v1/outreach/generate
+2026-10-25 17:15:33 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | services.outreachservicelayer | Outreach workflow started
+2026-10-25 17:15:33 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.gm_scraper | Google Maps scraper started
+2026-10-25 17:15:56 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.gm_scraper | Google Maps scraper completed lead_count=3
+2026-10-25 17:15:56 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.aicoldmessage | Cold-message generation started
+2026-10-25 17:15:56 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.aicoldmessage | Cold-message generation processing lead_count=3
+2026-10-25 17:15:56 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.aicoldmessage | Cold-message skipped lead_index=1 reason=missing_phone
+2026-10-25 17:15:56 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.aicoldmessage | Cold-message skipped lead_index=2 reason=missing_phone
+2026-10-25 17:16:00 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-25 17:16:00 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.aicoldmessage | Cold-message generation completed generated_count=1 skipped_count=2
+2026-10-25 17:16:00 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.saveleads | Lead export started lead_count=3
+2026-10-25 17:16:01 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | nodes.saveleads | Lead export completed lead_count=3 output_path=outcome\leads_20261025_171600.xlsx
+2026-10-25 17:16:01 | ERROR    | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | db.repositories.leadresultsrepository | Error while storing lead results
+Traceback (most recent call last):
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.NotNullViolation: null value in column "id" of relation "cl_client_results" violates not-null constraint
+DETAIL:  Failing row contains (null, 1, Manoj clinic, Medical clinic, 14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu ..., , 5.0, https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&q..., , 2026-10-25 17:16:01.174679+05:30, t).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\Projects\client acquitions\src\db\repositories\leadresultsrepository.py", line 43, in store_results
+    session.execute(insert(ClClientResult), records)
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1308, in orm_execute_statement
+    result = _bulk_insert(
+             ^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 222, in _bulk_insert
+    result = persistence._emit_insert_statements(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.NotNullViolation) null value in column "id" of relation "cl_client_results" violates not-null constraint
+DETAIL:  Failing row contains (null, 1, Manoj clinic, Medical clinic, 14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu ..., , 5.0, https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&q..., , 2026-10-25 17:16:01.174679+05:30, t).
+
+[SQL: INSERT INTO cl_client_results (seq_id, name, category, address, phone, rating, google_map_url, cold_message) VALUES (nextval('seq_cl_client_results'), %(name__0)s, %(category__0)s, %(address__0)s, %(phone__0)s, %(rating__0)s, %(google_map_url__0)s, % ... 229 characters truncated ... egory__2)s, %(address__2)s, %(phone__2)s, %(rating__2)s, %(google_map_url__2)s, %(cold_message__2)s)]
+[parameters: {'phone__0': '', 'rating__0': Decimal('5'), 'google_map_url__0': 'https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&query_place_id=ChIJjXY6UQBZqDsRO5z7AY_6yp4', 'address__0': '14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu 641039, India', 'name__0': 'Manoj clinic', 'category__0': 'Medical clinic', 'cold_message__0': '', 'phone__1': '', 'rating__1': Decimal('5'), 'google_map_url__1': 'https://www.google.com/maps/search/?api=1&query=Shree%20Dental%20Clinic&query_place_id=ChIJ8X0B50BZqDsRssrNlxdhAjY', 'address__1': 'vao office, sundar complex, 271A, Bharathi Rd, opposite LIC Colony Road, Golden Nagar, Selvapuram North, Selvapuram, Coimbatore, Tamil Nadu 641026, India', 'name__1': 'Shree Dental Clinic', 'category__1': 'Dental clinic', 'cold_message__1': '', 'phone__2': '+91 90436 82766', 'rating__2': Decimal('4.6'), 'google_map_url__2': 'https://www.google.com/maps/search/?api=1&query=FIRE%20HOUSE%20GYM&query_place_id=ChIJbVU40T9ZqDsRtueCDCLk4BI', 'address__2': 'RMCH HOSPITAL MAIN ROAD, Perur Main Rd, CGV Nagar, Selvapuram South, Coimbatore, Tamil Nadu 641026, India', 'name__2': 'FIRE HOUSE GYM', 'category__2': 'Fitness center', 'cold_message__2': 'Hello, I’m Arun Raja, an AI engineer who also builds websites. I noticed I wasn’t able to find a website for FIRE HOUSE GYM, though I could have miss ... (82 characters truncated) ... uild trust, and make it easier for new members to reach out. If you’re open to it, I’d be happy to chat about what that might look like for your gym.'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-10-25 17:16:01 | ERROR    | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | services.capturedleadsstoreservices | Error while storing fetched lead results
+Traceback (most recent call last):
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.NotNullViolation: null value in column "id" of relation "cl_client_results" violates not-null constraint
+DETAIL:  Failing row contains (null, 1, Manoj clinic, Medical clinic, 14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu ..., , 5.0, https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&q..., , 2026-10-25 17:16:01.174679+05:30, t).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\Projects\client acquitions\src\services\capturedleadsstoreservices.py", line 23, in store_retrieved_leads
+    return self.lead_repository.store_results(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\Projects\client acquitions\src\db\repositories\leadresultsrepository.py", line 43, in store_results
+    session.execute(insert(ClClientResult), records)
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2373, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1308, in orm_execute_statement
+    result = _bulk_insert(
+             ^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 222, in _bulk_insert
+    result = persistence._emit_insert_statements(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+  File "C:\Users\Ajay\OneDrive\Documents\VSC_Python\AR Works\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.NotNullViolation) null value in column "id" of relation "cl_client_results" violates not-null constraint
+DETAIL:  Failing row contains (null, 1, Manoj clinic, Medical clinic, 14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu ..., , 5.0, https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&q..., , 2026-10-25 17:16:01.174679+05:30, t).
+
+[SQL: INSERT INTO cl_client_results (seq_id, name, category, address, phone, rating, google_map_url, cold_message) VALUES (nextval('seq_cl_client_results'), %(name__0)s, %(category__0)s, %(address__0)s, %(phone__0)s, %(rating__0)s, %(google_map_url__0)s, % ... 229 characters truncated ... egory__2)s, %(address__2)s, %(phone__2)s, %(rating__2)s, %(google_map_url__2)s, %(cold_message__2)s)]
+[parameters: {'phone__0': '', 'rating__0': Decimal('5'), 'google_map_url__0': 'https://www.google.com/maps/search/?api=1&query=Manoj%20clinic&query_place_id=ChIJjXY6UQBZqDsRO5z7AY_6yp4', 'address__0': '14, Thenvadal St, Telungupalayam, Pudur, Coimbatore, Tamil Nadu 641039, India', 'name__0': 'Manoj clinic', 'category__0': 'Medical clinic', 'cold_message__0': '', 'phone__1': '', 'rating__1': Decimal('5'), 'google_map_url__1': 'https://www.google.com/maps/search/?api=1&query=Shree%20Dental%20Clinic&query_place_id=ChIJ8X0B50BZqDsRssrNlxdhAjY', 'address__1': 'vao office, sundar complex, 271A, Bharathi Rd, opposite LIC Colony Road, Golden Nagar, Selvapuram North, Selvapuram, Coimbatore, Tamil Nadu 641026, India', 'name__1': 'Shree Dental Clinic', 'category__1': 'Dental clinic', 'cold_message__1': '', 'phone__2': '+91 90436 82766', 'rating__2': Decimal('4.6'), 'google_map_url__2': 'https://www.google.com/maps/search/?api=1&query=FIRE%20HOUSE%20GYM&query_place_id=ChIJbVU40T9ZqDsRtueCDCLk4BI', 'address__2': 'RMCH HOSPITAL MAIN ROAD, Perur Main Rd, CGV Nagar, Selvapuram South, Coimbatore, Tamil Nadu 641026, India', 'name__2': 'FIRE HOUSE GYM', 'category__2': 'Fitness center', 'cold_message__2': 'Hello, I’m Arun Raja, an AI engineer who also builds websites. I noticed I wasn’t able to find a website for FIRE HOUSE GYM, though I could have miss ... (82 characters truncated) ... uild trust, and make it easier for new members to reach out. If you’re open to it, I’d be happy to chat about what that might look like for your gym.'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-10-25 17:16:01 | ERROR    | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | services.outreachservicelayer | Outreach workflow failed request_id=e2aa531b-f485-4ec4-8569-1266fbdb2a44 exception_type=IntegrityError duration_ms=28216.52
+2026-10-25 17:16:01 | ERROR    | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | api.routes.outreach | Outreach endpoint failed exception_type=IntegrityError
+2026-10-25 17:16:01 | INFO     | 1a2134c6-1afa-49c3-a3c5-2c20320e3bdc | middleware.request_logging | Request completed: POST /app/v1/outreach/generate status=500 duration_ms=28226.57
+2026-10-25 17:40:53 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | middleware.request_logging | Request started: POST /app/v1/outreach/generate
+2026-10-25 17:40:53 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | services.outreachservicelayer | Outreach workflow started
+2026-10-25 17:40:53 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.gm_scraper | Google Maps scraper started
+2026-10-25 17:41:13 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.gm_scraper | Google Maps scraper completed lead_count=3
+2026-10-25 17:41:13 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.aicoldmessage | Cold-message generation started
+2026-10-25 17:41:13 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.aicoldmessage | Cold-message generation processing lead_count=3
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.aicoldmessage | Cold-message skipped lead_index=2 reason=missing_phone
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.aicoldmessage | Cold-message skipped lead_index=3 reason=missing_phone
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.aicoldmessage | Cold-message generation completed generated_count=1 skipped_count=2
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.saveleads | Lead export started lead_count=3
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | nodes.saveleads | Lead export completed lead_count=3 output_path=outcome\leads_20261025_174115.xlsx
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | db.repositories.leadresultsrepository | Lead results inserted count=3
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | services.outreachservicelayer | Outreach workflow completed request_id=a4ef3766-3d2c-4a96-a861-dfc13a525394 lead_count=3 duration_ms=21998.93
+2026-10-25 17:41:15 | INFO     | e06e6f4a-da5d-4ea5-8f71-3dca8bb32ef8 | middleware.request_logging | Request completed: POST /app/v1/outreach/generate status=200 duration_ms=22009.55
+2026-10-25 17:43:07 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:43:07 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:43:13 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:43:13 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:43:17 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:43:17 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:52:06 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:52:06 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:52:13 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:52:13 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:53:15 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 17:53:15 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 17:57:50 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | middleware.request_logging | Request started: POST /app/v1/outreach/generate
+2026-10-25 17:57:50 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | services.outreachservicelayer | Outreach workflow started
+2026-10-25 17:57:51 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.gm_scraper | Google Maps scraper started
+2026-10-25 17:58:08 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.gm_scraper | Google Maps scraper completed lead_count=3
+2026-10-25 17:58:08 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.aicoldmessage | Cold-message generation started
+2026-10-25 17:58:08 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.aicoldmessage | Cold-message generation processing lead_count=3
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.aicoldmessage | Cold-message skipped lead_index=2 reason=missing_phone
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.aicoldmessage | Cold-message skipped lead_index=3 reason=missing_phone
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.aicoldmessage | Cold-message generation completed generated_count=1 skipped_count=2
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.saveleads | Lead export started lead_count=3
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | nodes.saveleads | Lead export completed lead_count=3 output_path=outcome\leads_20261025_175811.xlsx
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | db.repositories.leadresultsrepository | Lead results inserted count=3
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | services.outreachservicelayer | Outreach workflow completed request_id=6b35b082-f2a9-4626-81b3-ea4f084ef089 lead_count=3 duration_ms=20472.72
+2026-10-25 17:58:11 | INFO     | c96b9071-8288-415b-b19b-c663f5831b26 | middleware.request_logging | Request completed: POST /app/v1/outreach/generate status=200 duration_ms=20481.20
+2026-10-25 18:08:16 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:08:16 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:08:26 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:08:26 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:08:50 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:08:50 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:08:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:08:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:08:59 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:08:59 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:18 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:18 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:23 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:23 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:28 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:28 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:43 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:43 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:48 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:48 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:12:58 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:12:58 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:13:46 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:13:47 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:13:52 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:13:52 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:13:57 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:13:57 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:14:02 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:14:02 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:14:08 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:14:08 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:14:12 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:14:12 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:05 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:05 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:11 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:11 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:16 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:16 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:23 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:23 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:28 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:28 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:33 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:33 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:16:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:16:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:17:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:17:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:02 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:02 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:08 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:08 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:15 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:15 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:20 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:20 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:43 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:43 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:18:49 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:18:49 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:03 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:03 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:08 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:08 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:16 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:16 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:26 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:26 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:31 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:31 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:36 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:36 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:44 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:44 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:50 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:50 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:19:55 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:19:55 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:20:30 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:20:30 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:20:35 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:20:35 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:20:40 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:20:40 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:20:46 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:20:46 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:20:51 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:20:51 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:07 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:07 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:12 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:12 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:22 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:22 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:28 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:28 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:33 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:33 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:38 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:38 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:44 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:44 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:49 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:49 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:21:55 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:21:55 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:08 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:08 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:14 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:14 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:23 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:23 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:28 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:28 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:22:57 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:22:57 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:02 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:02 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:07 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:07 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:13 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:13 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:17 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:17 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:31 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:31 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:45 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:45 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:23:50 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:23:50 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:17 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:17 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:22 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:22 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:27 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:27 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:32 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:32 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:42 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:42 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:47 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:47 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:52 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:52 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:24:58 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:24:58 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:03 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:03 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:09 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:09 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:14 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:14 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:24 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:24 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:29 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:29 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:34 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:34 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:40 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:40 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:44 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:44 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:25:56 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:25:56 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:10 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:10 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:16 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:16 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:21 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:21 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:43 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:43 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:49 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:49 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:26:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:26:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:00 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:00 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:04 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:04 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:17 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:17 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:23 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:23 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:29 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:29 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:27:35 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:27:35 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:05 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:05 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:24 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:24 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:30 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:30 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:35 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:35 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:40 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:40 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:28:59 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:28:59 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:05 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:05 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:11 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:11 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:16 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:16 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:21 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:21 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:27 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:27 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:29:42 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:29:42 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:04 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:04 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:09 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:09 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:14 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:14 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:24 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:24 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:31 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:31 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:42 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:42 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:47 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:47 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:30:56 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:30:56 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:05 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:05 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:10 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:10 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:15 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:15 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:32 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:32 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:31:36 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:31:36 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:32:09 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:32:09 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:32:13 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:32:13 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:32:18 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:32:18 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:36:52 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:36:52 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:36:58 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:36:58 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:37:04 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:37:04 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:37:40 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:37:40 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:37:45 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:37:45 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:37:53 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:37:53 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:37:59 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:37:59 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:04 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:04 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:09 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:09 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:14 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:14 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:19 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:19 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:25 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:25 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:38:51 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:38:51 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:39:03 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:39:03 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:39:41 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:39:41 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:39:46 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:39:46 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:39:53 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:39:53 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:39:58 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:39:58 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:08 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:08 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:13 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:13 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:18 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:18 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:31 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:31 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:38 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:38 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:40:57 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:40:57 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:41:06 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:41:06 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:41:11 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:41:11 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:43:20 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:43:20 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:43:30 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:43:30 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:43:41 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:43:41 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:44:37 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:44:37 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:44:37 | INFO     | 7cb6cced-ec71-4f69-b5ec-8db2e4b36691 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:44:37 | INFO     | 7cb6cced-ec71-4f69-b5ec-8db2e4b36691 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=2
+2026-10-25 18:44:37 | INFO     | 7cb6cced-ec71-4f69-b5ec-8db2e4b36691 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=76.47
+2026-10-25 18:45:43 | INFO     | edcf6ed7-6252-47a5-8eb1-cedd503c8999 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:45:43 | INFO     | edcf6ed7-6252-47a5-8eb1-cedd503c8999 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=2
+2026-10-25 18:45:43 | INFO     | edcf6ed7-6252-47a5-8eb1-cedd503c8999 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=4.32
+2026-10-25 18:45:47 | INFO     | ee4e33c3-67a5-4c9c-b40e-10dd8b4ee96b | middleware.request_logging | Request started: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions
+2026-10-25 18:45:47 | INFO     | ee4e33c3-67a5-4c9c-b40e-10dd8b4ee96b | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 18:45:47 | INFO     | ee4e33c3-67a5-4c9c-b40e-10dd8b4ee96b | middleware.request_logging | Request completed: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions status=200 duration_ms=10.41
+2026-10-25 18:46:06 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 18:46:06 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 18:46:12 | INFO     | baa1d216-d8cb-4c53-9024-a261a0646f2d | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:46:12 | INFO     | baa1d216-d8cb-4c53-9024-a261a0646f2d | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=2
+2026-10-25 18:46:12 | INFO     | baa1d216-d8cb-4c53-9024-a261a0646f2d | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=90.57
+2026-10-25 18:46:12 | INFO     | 5f74f5bb-7d57-4ca1-bf03-49b44303bedb | middleware.request_logging | Request started: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions
+2026-10-25 18:46:12 | INFO     | 5f74f5bb-7d57-4ca1-bf03-49b44303bedb | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 18:46:12 | INFO     | 5f74f5bb-7d57-4ca1-bf03-49b44303bedb | middleware.request_logging | Request completed: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions status=200 duration_ms=13.48
+2026-10-25 18:48:46 | INFO     | 02359367-0334-4ab8-829a-39350c9a15d4 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:48:46 | INFO     | 02359367-0334-4ab8-829a-39350c9a15d4 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=2
+2026-10-25 18:48:46 | INFO     | 02359367-0334-4ab8-829a-39350c9a15d4 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=4.97
+2026-10-25 18:48:48 | INFO     | 24618d14-c808-475e-8ae4-749f8bae549a | middleware.request_logging | Request started: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions
+2026-10-25 18:48:48 | INFO     | 24618d14-c808-475e-8ae4-749f8bae549a | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 18:48:48 | INFO     | 24618d14-c808-475e-8ae4-749f8bae549a | middleware.request_logging | Request completed: GET /app/v1/runs/6b35b082-f2a9-4626-81b3-ea4f084ef089/executions status=200 duration_ms=2.89
+2026-10-25 18:48:54 | INFO     | 749eefa2-b695-4258-877c-93fe83054aab | middleware.request_logging | Request started: GET /app/v1/runs/a4ef3766-3d2c-4a96-a861-dfc13a525394/executions
+2026-10-25 18:48:54 | INFO     | 749eefa2-b695-4258-877c-93fe83054aab | services.capturedleadsstoreservices | Lead results fetched count=0
+2026-10-25 18:48:54 | INFO     | 749eefa2-b695-4258-877c-93fe83054aab | middleware.request_logging | Request completed: GET /app/v1/runs/a4ef3766-3d2c-4a96-a861-dfc13a525394/executions status=200 duration_ms=2.86
+2026-10-25 18:48:59 | INFO     | ff81f8c7-2b7c-4eb3-8b01-b3dba248c13d | middleware.request_logging | Request started: GET /app/v1/runs/a4ef3766-3d2c-4a96-a861-dfc13a525394/executions
+2026-10-25 18:48:59 | INFO     | ff81f8c7-2b7c-4eb3-8b01-b3dba248c13d | services.capturedleadsstoreservices | Lead results fetched count=0
+2026-10-25 18:48:59 | INFO     | ff81f8c7-2b7c-4eb3-8b01-b3dba248c13d | middleware.request_logging | Request completed: GET /app/v1/runs/a4ef3766-3d2c-4a96-a861-dfc13a525394/executions status=200 duration_ms=3.07
+2026-10-25 18:49:19 | INFO     | 19a9edf6-98c2-4677-8d1c-9282745c82a8 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:49:19 | INFO     | 19a9edf6-98c2-4677-8d1c-9282745c82a8 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=2
+2026-10-25 18:49:19 | INFO     | 19a9edf6-98c2-4677-8d1c-9282745c82a8 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=3.38
+2026-10-25 18:50:07 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | middleware.request_logging | Request started: POST /app/v1/outreach/generate
+2026-10-25 18:50:07 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | services.outreachservicelayer | Outreach workflow started
+2026-10-25 18:50:07 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.gm_scraper | Google Maps scraper started
+2026-10-25 18:50:27 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.gm_scraper | Google Maps scraper completed lead_count=3
+2026-10-25 18:50:27 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.aicoldmessage | Cold-message generation started
+2026-10-25 18:50:27 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.aicoldmessage | Cold-message generation processing lead_count=3
+2026-10-25 18:50:30 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | httpx2 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.aicoldmessage | Cold-message skipped lead_index=3 reason=missing_phone
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.aicoldmessage | Cold-message generation completed generated_count=2 skipped_count=1
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.saveleads | Lead export started lead_count=3
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | nodes.saveleads | Lead export completed lead_count=3 output_path=outcome\leads_20261025_185032.xlsx
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | db.repositories.leadresultsrepository | Lead results inserted count=3
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | services.outreachservicelayer | Outreach workflow completed request_id=5110a84d-fa5c-4774-aff1-7354c346c5be lead_count=3 duration_ms=25490.78
+2026-10-25 18:50:32 | INFO     | 296805f2-095e-4d24-a995-cc2804be1dc9 | middleware.request_logging | Request completed: POST /app/v1/outreach/generate status=200 duration_ms=25494.19
+2026-10-25 18:50:32 | INFO     | 23337c99-7d83-41e7-b99e-3d79d3ab24cc | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:50:32 | INFO     | 23337c99-7d83-41e7-b99e-3d79d3ab24cc | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=3
+2026-10-25 18:50:32 | INFO     | 23337c99-7d83-41e7-b99e-3d79d3ab24cc | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=8.77
+2026-10-25 18:50:44 | INFO     | ecb726a3-95fd-4a43-b0f7-f9f3868254d7 | middleware.request_logging | Request started: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions
+2026-10-25 18:50:44 | INFO     | ecb726a3-95fd-4a43-b0f7-f9f3868254d7 | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 18:50:44 | INFO     | ecb726a3-95fd-4a43-b0f7-f9f3868254d7 | middleware.request_logging | Request completed: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions status=200 duration_ms=3.23
+2026-10-25 18:53:13 | INFO     | 1f820edd-036c-402d-882d-5f158c24abb4 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:53:13 | INFO     | 1f820edd-036c-402d-882d-5f158c24abb4 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=3
+2026-10-25 18:53:13 | INFO     | 1f820edd-036c-402d-882d-5f158c24abb4 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=5.48
+2026-10-25 18:56:01 | INFO     | 29048517-1001-43e1-bf84-2916434a334a | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 18:56:01 | INFO     | 29048517-1001-43e1-bf84-2916434a334a | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=3
+2026-10-25 18:56:01 | INFO     | 29048517-1001-43e1-bf84-2916434a334a | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=4.46
+2026-10-25 18:56:05 | INFO     | de022f10-1d05-4c0e-b079-1fe2553d4df8 | middleware.request_logging | Request started: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions
+2026-10-25 18:56:05 | INFO     | de022f10-1d05-4c0e-b079-1fe2553d4df8 | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 18:56:05 | INFO     | de022f10-1d05-4c0e-b079-1fe2553d4df8 | middleware.request_logging | Request completed: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions status=200 duration_ms=2.79
+2026-10-25 21:15:39 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-10-25 21:15:39 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-10-25 21:15:47 | INFO     | b0219d96-112f-422e-98d5-1fc19459aff0 | middleware.request_logging | Request started: GET /app/v1/runs
+2026-10-25 21:15:47 | INFO     | b0219d96-112f-422e-98d5-1fc19459aff0 | db.repositories.outreachrequestrespository | Fetched previous outreach requests count=3
+2026-10-25 21:15:47 | INFO     | b0219d96-112f-422e-98d5-1fc19459aff0 | middleware.request_logging | Request completed: GET /app/v1/runs status=200 duration_ms=119.91
+2026-10-25 21:15:54 | INFO     | 42ae0175-fa7c-4cf6-b84e-f24e9e2584f1 | middleware.request_logging | Request started: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions
+2026-10-25 21:15:54 | INFO     | 42ae0175-fa7c-4cf6-b84e-f24e9e2584f1 | services.capturedleadsstoreservices | Lead results fetched count=3
+2026-10-25 21:15:54 | INFO     | 42ae0175-fa7c-4cf6-b84e-f24e9e2584f1 | middleware.request_logging | Request completed: GET /app/v1/runs/5110a84d-fa5c-4774-aff1-7354c346c5be/executions status=200 duration_ms=27.04
