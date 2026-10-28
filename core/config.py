@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     )
 
     db_url: str = Field(
-        validation_alias=AliasChoices("DATABASE_URL")
+        validation_alias=AliasChoices("SUPABASE_DB_URL", "DATABASE_URL")
     )
 
     model_config = SettingsConfigDict(
@@ -23,4 +23,3 @@ class Settings(BaseSettings):
 
 
 setting = Settings()
-
