@@ -12,6 +12,21 @@ service = LoginServices()
 @router.get("/login")
 async def user_login(username: str, password: str):
     try:
-        return service.verify_login(username=username, password=password)
+        result = service.verify_login(username=username, password=password)
+
+        if result == 0:
+            return {
+                "status": "failed",
+                "response": "invalid username or password"
+            }
+
+        if result == 1:
+            return {
+                "status": "success",
+                "response": "successfully logged in"
+            }
     except Exception as e:
-        raise e
+        return {
+            "status": "failed",
+            "response": f"exception: {e}"
+        }

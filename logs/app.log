@@ -636,3 +636,53 @@ DETAIL:  Failing row contains (null, 1, Manoj clinic, Medical clinic, 14, Thenva
 2026-11-01 11:32:28 | INFO     | 1f25081d-268d-42a8-a5d1-dc80149af23b | middleware.request_logging | Request completed: GET /app/v1/login/login status=200 duration_ms=7626.66
 2026-11-01 11:32:36 | INFO     | c1ee7967-b8f1-4ffb-8ba3-4bc001eb4495 | middleware.request_logging | Request started: GET /app/v1/login/login
 2026-11-01 11:32:37 | INFO     | c1ee7967-b8f1-4ffb-8ba3-4bc001eb4495 | middleware.request_logging | Request completed: GET /app/v1/login/login status=200 duration_ms=863.81
+2026-11-01 11:52:14 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:52:14 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:52:26 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:52:26 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:52:32 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:52:32 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:52:50 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:52:50 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:01 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:01 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:07 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:07 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:12 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:12 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:18 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:18 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:27 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:27 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:33 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:33 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:44 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:44 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:49 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:49 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:53:54 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:53:54 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:01 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:01 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:06 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:06 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:18 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:18 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:24 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:24 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:29 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:29 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:35 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:35 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:54:42 | INFO     | - | graph.maingraph | Compiling outreach graph
+2026-11-01 11:54:42 | INFO     | - | graph.maingraph | Outreach graph compiled successfully
+2026-11-01 11:55:19 | INFO     | a711e26e-ae8d-4fca-94e7-2ef4754814ed | middleware.request_logging | Request started: GET /
+2026-11-01 11:55:19 | INFO     | a711e26e-ae8d-4fca-94e7-2ef4754814ed | middleware.request_logging | Request completed: GET / status=404 duration_ms=10.63
+2026-11-01 11:55:24 | INFO     | bde43dd5-847d-4e2a-84d2-b44123f40292 | middleware.request_logging | Request started: GET /docs
+2026-11-01 11:55:24 | INFO     | bde43dd5-847d-4e2a-84d2-b44123f40292 | middleware.request_logging | Request completed: GET /docs status=200 duration_ms=1.11
+2026-11-01 11:55:24 | INFO     | 828e28be-443e-4ae2-bdfc-25cdae7732e7 | middleware.request_logging | Request started: GET /openapi.json
+2026-11-01 11:55:24 | INFO     | 828e28be-443e-4ae2-bdfc-25cdae7732e7 | middleware.request_logging | Request completed: GET /openapi.json status=200 duration_ms=42.61
+2026-11-01 11:55:33 | INFO     | dbe8a8e2-592c-44bd-b4b4-b34a58361692 | middleware.request_logging | Request started: GET /app/v1/login/login
+2026-11-01 11:55:41 | INFO     | dbe8a8e2-592c-44bd-b4b4-b34a58361692 | middleware.request_logging | Request completed: GET /app/v1/login/login status=200 duration_ms=7502.28
+2026-11-01 11:55:52 | INFO     | 005dfec0-9716-4862-b2c3-5ae7bafc16f2 | middleware.request_logging | Request started: GET /app/v1/login/login
+2026-11-01 11:55:53 | INFO     | 005dfec0-9716-4862-b2c3-5ae7bafc16f2 | middleware.request_logging | Request completed: GET /app/v1/login/login status=200 duration_ms=740.80
