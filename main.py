@@ -3,6 +3,7 @@ from core.logging_cofig import setup_logging
 from api.routes.health import router as health_router 
 from api.routes.outreach import router as outreach_router
 from api.routes.previous_runs import router as previous_run_router
+from api.routes.login import router as login_router
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -42,6 +43,11 @@ def create_app() -> FastAPI:
 
     app.include_router(
         previous_run_router,
+        prefix="/app/v1"
+    )
+
+    app.include_router(
+        login_router,
         prefix="/app/v1"
     )
     return app 

@@ -1,6 +1,6 @@
 # env file
 .env
-
+.env.example
 
 # langgraph api
 .langgraph_api/ 
